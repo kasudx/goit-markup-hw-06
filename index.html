@@ -85,52 +85,91 @@
                 </svg>
               </button>
               <div>
-                <h2 class="modal-header">
-                  Zostaw swoje dane w formularzu poniżej
-                </h2>
                 <form class="modal-form" name="signupForm">
-                  <ul class="ul-form">
-                    <li class="li-form">
-                      <label for="name-input">Imię</label>
+                  <h2 class="modal-header">
+                    Zostaw swoje dane w formularzu poniżej
+                  </h2>
+                  <div class="labels-and-inputs">
+                    <label for="name-input" class="form-label"
+                      >Imię<br />
+                      <svg class="form-icon" width="18px" height="18px">
+                        <use
+                          href="./images/icons.svg#icon-person-black-modal"
+                        ></use>
+                      </svg>
                       <input
-                        class="class-input-name"
+                        class="class-input"
                         id="name-input"
                         type="name"
                         name="name"
                       />
-                    </li>
-                    <li class="li-form">
-                      <label for="tel-inputs"> Telefon </label>
-                      <input id="tel-input" type="tel" name="tel" />
-                    </li>
-                    <li class="li-form">
-                      <label for="email-input"> Email</label>
-                      <input id="email-input" type="email" name="email" />
-                    </li>
-                    <li class="li-form">
-                      <label for="note-textarea">Komentarz</label>
+                    </label>
+                    <label for="phone-input" class="form-label"
+                      >Telefon <br />
+                      <svg class="form-icon" width="18px" height="18px">
+                        <use
+                          class="form-icon-phone"
+                          href="./images/icons.svg#icon-phone-black-modal-2"
+                        ></use>
+                      </svg>
+                      <input
+                        class="class-input"
+                        id="name-phone"
+                        type="name"
+                        name="name"
+                      />
+                    </label>
+                    <label for="email-input" class="form-label"
+                      >Email <br />
+                      <svg class="form-icon" width="18px" height="18px">
+                        <use
+                          href="./images/icons.svg#icon-email-black-modal"
+                        ></use>
+                      </svg>
+                      <input
+                        class="class-input"
+                        id="email-input"
+                        type="name"
+                        name="name"
+                      />
+                    </label>
+
+                    <label for="note-textarea" class="form-label"
+                      >Komentarz<br />
                       <textarea
                         id="note-textarea"
                         type="note"
                         name="note"
                         placeholder="Wprowadź tekst"
+                        class="note-textarea"
                       ></textarea>
-                    </li>
-                    <div>
-                      <svg class="person">
+                    </label>
+                  </div>
+                  <div>
+                    <label for="checkbox-terms" class="label-checkbox-terms">
+                      <input
+                        id="checkbox-terms"
+                        type="checkbox"
+                        name="checkbox-terms"
+                        value="true"
+                        class="input-checkbox-terms"
+                      />
+                      <svg class="icon-checked" width="16px" height="15px">
                         <use
-                          href="./images/icons.svg#icon-person-black-modal"
+                          href="./images/icons.svg#icon-Vector-checked"
                         ></use>
                       </svg>
-                    </div>
-                    <svg class="person">
-                      <use
-                        href="./images/icons-modal.svg#icon-email-black-modal"
-                      ></use>
-
-                      icon-email-black-modal
-                    </svg>
-                  </ul>
+                      <p class="terms-description">
+                        Oświadczam, iż akceptuję <a href=".">Regulamin</a> i
+                        <a href=".">Politykę Prywatności</a>
+                      </p>
+                    </label>
+                  </div>
+                  <div>
+                    <button type="submit" class="modal-form-button">
+                      Wyślij
+                    </button>
+                  </div>
                 </form>
               </div>
             </div>
@@ -521,6 +560,32 @@
                 </div>
               </li>
             </ul>
+          </div>
+
+          <div>
+            <form class="newsletter-form" name="newsletterForm">
+              <h2 class="footer-newsletter-header">
+                ZAPISZ SIĘ DO NEWSLETTERA
+              </h2>
+              <label for="newsletter-email-input" class="newsletter-label">
+                <input
+                  class="class-newsletter-input"
+                  id="newsletter-email-input"
+                  placeholder="E-mail"
+                  type="email-newsletter"
+                  name="email-newsletter"
+                />
+                <button type="submit" class="newsletter-button">
+                  Zapisz się
+                  <svg class="newsletter-icon" width="24px" height="24px">
+                    <use
+                      href=" ./images/icons.svg#icon-icon-send"
+                      class="icon-send"
+                    ></use>
+                  </svg>
+                </button>
+              </label>
+            </form>
           </div>
         </div>
       </div>
